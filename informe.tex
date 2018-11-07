@@ -79,11 +79,193 @@ BASE DE DATOS II\\
 Integrantes: \\
 \begin{flushleft}
 Percy Taquila Carazas\hfill	(2018061088) \\
-
+Apaza Mamani Edward\hfill	(2018060915) \\
 \end{flushleft}
 \end{large}
 \end{center}
 
 \end{titlepage}
+
+\tableofcontents % INDICE
+\thispagestyle{empty} % INDICE SIN NUMERO
+\newpage
+\setcounter{page}{1} % REINICIAR CONTADOR DE PAGINAS DESPUES DEL INDICE
+
+
+\section{Objetivos} 
+
+\begin{itemize}
+- Realizar la Instalación de un sistema de gestión de Base de Datos Oracle sobre programa de virtualización (Hyper-V)con un sistema operativo Oracle Linux.\\
+\end{itemize} 
+
+
+\section{Requerimientos} 
+
+\begin{itemize}
+\subsection{Conocimientos}\\
+- Conocimientos básicos de comandos Linux.\\
+- Conocimientos básicos de redes locales.\\\\
+
+\subsection{Hardware}\\
+- 01 procesador de doble núcleo o superior\\
+- 4Gb de memoria física (RAM) o superior\\
+- Disco duro con 100Gb de capacidad\\
+- Interfaz de Red Ethernet activa.\\\\
+
+\subsection{Software}\\
+- Sistema Operativo Windows 10\\
+- Instalador de Oracle Linux(En DVD o archivo de tipo imagen .ISO).\\
+- Instalador de Oracle Database 11g R2 (En DVD o archivo de tipo imagen .ISO).\\
+- Hyper-V.
+\end{itemize} 
+
+
+\section{Pasos a seguir}
+
+\begin{itemize}
+\subsection{Instalación del Hyper-V}\\
+- Nos dirigimos al buscador del Windows 10 y escribimos: 'Activar o desactivar las características de Windows'.\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=8cm]{./Imagenes/1} 
+\end{center}
+
+
+\begin{itemize}
+- Buscamos la opción llamada 'Hyper V', lo activamos la casilla y reiniciamos la pc.\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=8cm]{./Imagenes/2} 
+\end{center}
+
+
+\begin{itemize}
+\subsection{Configuración del Hyper-V}\\
+- Nos dirigimos a 'Administrador de conmutadores virtuales'. En la ventana que nos muestra
+tenemos que elegir conmutador 'Interno', luego hacemos click en 'Crear conmutador virtual'.
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=10cm]{./Imagenes/3} 
+\end{center}
+
+
+\begin{itemize}
+- Nos pedirá ingresar un nombre, ponemos el que deseamos. Verificamos si esta marcada la casilla
+en 'Red interna' y damos click en 'Aceptar'.\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=10cm]{./Imagenes/4} 
+\end{center}
+
+
+\begin{itemize}
+- Ingresamos a la opción 'Configuración de Hyper-V', le asignaremos una ruta donde se almacenará los archivos instalados.\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/5} 
+\end{center}
+
+
+
+\begin{itemize}
+- Luego del mismo modo pasaremos a configurar la ruta donde se guardará la máquina virtual\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/6} 
+\end{center}
+
+\begin{itemize}
+
+\subsection{Creación de la maquina virtual en Hyper-V}\\
+- Hacemos click en 'Nuevo-Maquina virtual'. En la ventana que nos muestra ingresamos el nombre que deseemos poner a la maquina virtual, damos siguiente.
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=10cm]{./Imagenes/7} 
+\end{center}
+
+
+
+\begin{itemize}
+- Elegimos la generación por defecto\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/8} 
+\end{center}
+
+
+
+\begin{itemize}
+- Asignamos un total de 2048 MB de memoria RAM\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/9} 
+\end{center}
+
+
+\begin{itemize}
+- En esta parte asignamos la red que hemos creado anteriormente, que en esta ocasión esta con el nombre de 'rednueva'\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/10} 
+\end{center}
+
+\begin{itemize}
+- En esta ventana escogemos la opción de 'Usar un disco
+duro virtual existente', damos click en siguiente y finalizamos la instalación\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/11} 
+\end{center}
+
+
+\begin{itemize}
+- Luego de ser creado la maquina virtual, lo seleccionamos y nos dirigimos a la pestaña de 'configuración'. Cambiaremos la opción de procesador y escogeremos a 2 el numero de procesadores. Damos click en aceptar\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/12} 
+\end{center}
+
+
+\begin{itemize}
+- Ahora iniciaremos la maquina virtual, escogemos la opción 'Iniciar' y luego 'Conectar'\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/13} 
+\end{center}
+
+
+
+\begin{itemize}
+\subsection{Instalación de Oracle Database Server}\\
+- En el sistema Operativo que hemos virtualizamos que en este caso es Oracle Linux, iniciamos sesion con el respectivo login y contraseña.
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=10cm]{./Imagenes/14} 
+\end{center}
+
+
+\begin{itemize}
+- Configuraremos las IPs tanto de la maquina virtual como del anfritrión. En la maquina real vamos a la opción 'conexiones de red' y seleccionamos la red que hemos creado al principio para el Hyper-V que esta con el nombre de 'rednueva'\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/15} 
+\end{center}
+
+
 
 \end{document}
