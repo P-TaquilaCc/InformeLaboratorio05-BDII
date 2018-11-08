@@ -268,4 +268,184 @@ duro virtual existente', damos click en siguiente y finalizamos la instalación\
 
 
 
+\begin{itemize}
+- Damos click en propiedades para poder cambiar el ip\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/16} 
+\end{center}
+
+
+
+\begin{itemize}
+- Ahora en la maquina virtual en la parte superior hacemos click derecho y seleccionamos la opción 'Edit Connections'\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/17} 
+\end{center}
+
+
+\begin{itemize}
+- Nos aparecerá dos opciones de lo cual borraremos el útimo, ahora editaremos el unico que ha quedado'\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/18} 
+\end{center}
+
+\begin{itemize}
+- Abrimos el terminal y agregamos los siguientes codigos para poder crear las carpetas necesarias\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/19} 
+\end{center}
+
+\begin{itemize}
+- Configuraremos algunos parámetros del kernel, para eso será necesario editar el archivo
+/etc/sysctl.conf. Una vez dentro del archivo debemos añadir cietas lineas al final, quedando de esta manera\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/20} 
+\end{center}
+
+
+
+\begin{itemize}
+- Luego se debera realizar cambios a los limites de seguridad del sistema para el usuario, para lo
+cual se debe editar el archivo /etc/security/limits.conf, una vez dentro del archivo configuramos de la siguiente manera\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/21} 
+\end{center}
+
+
+\begin{itemize}
+- Seguidamente escribimos el codigo ifconfig eth1\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/22} 
+\end{center}
+
+
+\begin{itemize}
+- Despues de establecer la dirección IP, debemos configurar el nombre del servidor, editamos el archivo /etc/host de la siguiente manera, luego reiniciamos la maquina virtual\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/23} 
+\end{center}
+
+
+\begin{itemize}
+- Una vez reiniciado la maquina virtual, editamos el siguiente archivo .bash_profile, agregamos la siguiente configuracion y volvemos a reiniciar el sistema\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/24} 
+\end{center}
+
+
+
+\begin{itemize}
+- Ahora descomprimimos los dos archivos zip, para poder ejecutar el instalador del Oracle\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/25} 
+\end{center}
+
+
+
+\begin{itemize}
+- Entramos a la carpeta database, hacemos click en runInstaller luego click en 'run in terminal'\\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/26} 
+\end{center}
+
+\begin{itemize}
+- Se abrirá el menú de instalación, escribiremos un correo y desmarcaremos el check, presionamos siguiente \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/27} 
+\end{center}
+
+
+\begin{itemize}
+- Luego nos mostrará la siguiente imagen y selecciamos la primera opción  \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/28} 
+\end{center}
+
+\begin{itemize}
+- Dejamos la opción marcado por defecto \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/29} 
+\end{center}
+
+\begin{itemize}
+- En este paso dejamos marcado la opción por defecto, presionamos continuar \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/30} 
+\end{center}
+
+
+\begin{itemize}
+- Una vez llegado a este paso, tendremos que llenar datos necesarios para continuar \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/31} 
+\end{center}
+
+\begin{itemize}
+- Marcamos la casilla que esta en la esquina superior derecha, hacemos click en continuar \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/32} 
+\end{center}
+
+\begin{itemize}
+- Al terminar la instalación nos mostrará esta imagen \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/33} 
+\end{center}
+
+
+\begin{itemize}
+- Luego nos mostrará una ventan, cambiamos de usuario a root y copiamos las dos rutas en una terminal \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/34} 
+\end{center}
+
+
+\begin{itemize}
+- Por ultimo abrimos un navegador, ponemos la siguiente dirección para poder ingresar al gestor de base de datos oracle \\
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/35} 
+\end{center}
+
+
+
 \end{document}
