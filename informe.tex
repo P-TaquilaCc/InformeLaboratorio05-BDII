@@ -446,6 +446,68 @@ cual se debe editar el archivo /etc/security/limits.conf, una vez dentro del arc
 	\includegraphics[width=12cm]{./Imagenes/35} 
 \end{center}
 
+\section{Cuestionario} 
+\subsection{Los valores introducidos al archivo sysctl.conf ¿que representan?}\\
+\textbf{fs.suid-dumpable}
+\begin{itemize}
+- Es para a volcados de núcleo, el valor 1 permite volcados de núcleo que pueden ser leídos por el propietario del proceso de dumping \\
+\end{itemize}
 
+\textbf{fs.aio-max-nr}
+\begin{itemize}
+- Es para establecer el aio-max-nrvalor, esto ayuda a HyperScale a tener un rendimiento óptimo. \\
+\end{itemize}
+
+\textbf{fs.file-max}
+\begin{itemize}
+- Establece el número máximo de manejadores de archivos que asignará el kernel de Linux. \\
+\end{itemize}
+
+\textbf{kernel.shmmni}
+\begin{itemize}
+- Establece el número máximo de segmentos de memoria compartida en todo el sistema. \\
+\end{itemize}
+
+\textbf{kernel.sem }
+\begin{itemize}
+- Establece parámetros de semáforo: SEMMSL, SEMMNS, SEMOPM y SEMMNI \\
+\end{itemize}
+
+\textbf{net.ipv4.ip-local-port-range}
+\begin{itemize}
+- Define el puerto mínimo y máximo que una conexión de red puede usar como su puerto de origen (local). \\
+\end{itemize}
+
+\textbf{net.core.rmem-default}
+\begin{itemize}
+- Un parámetro de kernel que controla el tamaño predeterminado de búferes de recepción utilizado por conectores. \\
+\end{itemize}
+
+\textbf{net.core.rmem-max }
+\begin{itemize}
+- Ajusta el máximo de bufer de recepción para todos los protocolos \\
+\end{itemize}
+
+
+\textbf{net.core.wmem-default }
+\begin{itemize}
+- Esto establece el tamaño del búfer de envío del sistema operativo predeterminado para todos los tipos de conexiones. \\
+\end{itemize}
+
+\textbf{net.core.wmem-max}
+\begin{itemize}
+- Ajusta el máximo de bufer de envio para todos los protocolos \\
+\end{itemize}
+
+\subsection{¿Con qué usuario(s) puedo conectarme al servidor a través del Administrador Empresarial?}\\
+\begin{itemize}
+- SYS y Oracle \\
+\end{itemize}
+
+\subsection{Capture una imagen de pantalla del navegador con el Administrador Empresarial, con el nombre de su servidor e iniciada la sesión del usuario SYS}\\
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/36} 
+\end{center}
 
 \end{document}

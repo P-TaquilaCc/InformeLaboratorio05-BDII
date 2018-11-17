@@ -9,3 +9,7 @@
 \contentsline {subsection}{\numberline {3.2}Configuraci\IeC {\'o}n del Hyper-V}{2}
 \contentsline {subsection}{\numberline {3.3}Creaci\IeC {\'o}n de la maquina virtual en Hyper-V}{3}
 \contentsline {subsection}{\numberline {3.4}Instalaci\IeC {\'o}n de Oracle Database Server}{6}
+\contentsline {section}{\numberline {4}Cuestionario}{16}
+\contentsline {subsection}{\numberline {4.1}Los valores introducidos al archivo sysctl.conf \IeC {\textquestiondown }que representan?}{16}
+\contentsline {subsection}{\numberline {4.2}\IeC {\textquestiondown }Con qu\IeC {\'e} usuario(s) puedo conectarme al servidor a trav\IeC {\'e}s del Administrador Empresarial?}{17}
+\contentsline {subsection}{\numberline {4.3}Capture una imagen de pantalla del navegador con el Administrador Empresarial, con el nombre de su servidor e iniciada la sesi\IeC {\'o}n del usuario SYS}{17}
